@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Impact Game</title>
+	<title>GMAs House</title>
+	<script type="text/javascript">
+	var Clay = Clay || {};
+	Clay.gameKey = "gmashouse";
+	Clay.readyFunctions = [];
+	Clay.ready = function( fn ) {
+	Clay.readyFunctions.push( fn );
+	};
+	( function() {
+	var clay = document.createElement("script");
+	clay.src = ( "https:" == document.location.protocol ? "https://" : "http://" ) + "clay.io/api/api.js";
+	var tag = document.getElementsByTagName("script")[0]; tag.parentNode.insertBefore(clay, tag);
+	} )();
+	</script>
 	<style type="text/css">
 		html,body {
 			background-color: #333;
